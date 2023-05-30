@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
 header {
@@ -765,6 +766,7 @@ img[alt="customer-review-profile-img"] {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 10px 0px 70px 0px;
 }
 
 .newsletter-container {
@@ -842,6 +844,7 @@ img[alt="customer-review-profile-img"] {
 .email-box-submit-btn:hover {
     cursor: pointer;
     background-color: #6412e9db;
+    user-select: none;
 }
 
 
@@ -1007,23 +1010,47 @@ footer {
 
     .content-on-header-image h1 {
         font-size: 35px;
-        width: 80%;
+        width: 100%;
     }
 
     .searchbar-container {
-        background: #fff;
-        padding: 12px 12px 12px 20px;
-        width: 90%;
-        border-radius: 100px;
-        display: flex;
+        width: 85%;
+        border-radius: 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .location, .price {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .location select, .price select {
+        font-size: 12px;
+    }
+
+    .searchbar-container .select-option {
         justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        padding: 0px 30px 0 10px;
+    }
+
+    .location select {
+        padding-left: 20px;
     }
 
     .searchbar-container .search-btn {
-    padding: 8px 20px 8px 10px;
-    font-size: 14px;
+        border-radius: 100px;
+        width: 100%;
+        font-size: 14px;
     }
+
+    .searchbar-container .fa-search {
+        display: none;
+    }
+
+
 
 
     /* section-1 styling */
@@ -1044,9 +1071,6 @@ footer {
         padding: 0 50px;
         font-size: 14px;
     }
-
-
-
 
     .trusted-companies {
         margin: 40px 0;
@@ -1088,11 +1112,13 @@ footer {
     }
 
     .house-card-section h1 {
-        font-size: 35px;
+        font-size: 28px;
         font-weight: 600;
         color: #111;
         text-align: center;
         line-height: 1.2;
+        padding: 50px 30px 20px 30px;
+        /* margin: 100px 0 30x 0; */
     }
 
     .filter-and-search-box {
@@ -1146,8 +1172,8 @@ footer {
     .map-location-text-box p {
         text-align: center;
         font-size: 14px;
-        padding: 0 10px;
-        margin: 30px 0;
+        width: 100%;
+        padding: 20px;
     }
 
     .map-location-btn-div {
@@ -1292,11 +1318,20 @@ footer {
 
     /* section 5 or newsletter styling */
 
+    /* section-5 */
+    .section-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
     .newsletter-container {
         display: block;
         width: 100%;
         border-radius: 0;
-        padding: 30px 25px;
+        padding: 30px 25px 40px 25px;
         text-align: center;
     }
 

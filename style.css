@@ -1360,6 +1360,10 @@ footer {
     .email-box input {
         font-size: 14px;
     }
+
+    .email-box input:focus {
+        border-bottom: 2px solid #6412e9;
+    }
     
     .email-box-submit-btn {
         width: 95%;
@@ -1369,18 +1373,19 @@ footer {
 
     /* footer styling*/
     footer {
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         width: 100%;
         background: #6412e9;
         opacity: 0.8;
-        padding: 20px;
+        padding: 50px 20px 20px 20px;
         margin: 50px 0 0 0;
     }
 
     .footer-wrapper {
         width: 100%;
-        justify-content: left;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         margin: 10px 0px;
     }
@@ -1388,7 +1393,7 @@ footer {
     .footer-div1  {
         width: 100%;
         background: #fff;
-        padding: 20px 20px;
+        padding: 20px;
         border-radius: 15px;
         /* border: 2px solid red; */
     }
@@ -1402,6 +1407,12 @@ footer {
 
     .footer-social-icons {
         margin: 0;
+    }
+
+
+    .footer-links-div {
+        text-align: left;
+        width: 90%;
     }
 
     .footer-links-div h5 {
